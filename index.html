@@ -20,28 +20,29 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 15px 40px;
+      padding: 18px 40px;
       border-bottom: 1px solid #e5e7eb;
       position: sticky;
       top: 0;
       z-index: 1000;
     }
 
-    .logo {
+    .brand {
       display: flex;
-      align-items: center;
-      gap: 12px;
+      flex-direction: column;
     }
 
-    .logo img {
-      height: 45px;
-    }
-
-    .logo span {
+    .brand-name {
+      font-size: 24px;   /* 🔥 BADA naam */
       font-weight: bold;
+      letter-spacing: 2px;
       color: #1f3a8a;
-      font-size: 18px;
-      letter-spacing: 1px;
+    }
+
+    .brand-tagline {
+      font-size: 13px;   /* 👇 choti supporting line */
+      color: #555;
+      margin-top: 2px;
     }
 
     nav ul {
@@ -63,7 +64,7 @@
       text-decoration: underline;
     }
 
-    /* HEADER */
+    /* HERO */
     header {
       background: #1f3a8a;
       color: white;
@@ -73,13 +74,13 @@
 
     header h1 {
       margin: 0;
-      font-size: 44px;
+      font-size: 46px;
       letter-spacing: 2px;
     }
 
     header p {
-      margin-top: 15px;
-      font-size: 18px;
+      margin-top: 14px;
+      font-size: 17px;
       opacity: 0.95;
     }
 
@@ -125,12 +126,6 @@
       margin-top: 60px;
       font-size: 14px;
     }
-
-    footer a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
   </style>
 </head>
 
@@ -138,10 +133,14 @@
 
   <!-- NAVBAR -->
   <nav>
-    <div class="logo">
-      <img src="logo.png" alt="The Aggregate Solutions Logo">
-      <span>THE AGGREGATE SOLUTIONS</span>
+    <div class="brand">
+      <!-- Logo yahan baad me lagega -->
+      <!-- <img src="logo.png" alt="Logo"> -->
+
+      <div class="brand-name">THE AGGREGATE SOLUTIONS</div>
+      <div class="brand-tagline">Construction Estimating & Project Support</div>
     </div>
+
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
@@ -152,7 +151,7 @@
   <!-- HERO -->
   <header>
     <h1>Precision. Accuracy. Trusted Results.</h1>
-    <p>Construction Estimating & Project Support for Australia & USA</p>
+    <p>Serving Construction Projects Across Australia & USA</p>
   </header>
 
   <!-- MAIN CONTENT -->
@@ -188,8 +187,7 @@
     <p>Australia & United States</p>
 
     <h2 id="contact">Contact</h2>
-    <p>Email: <a href="mailto:theaggregatesolutions01@gmail.com">
-      theaggregatesolutions01@gmail.com</a></p>
+    <p>Email: theaggregatesolutions01@gmail.com</p>
 
   </div>
 
