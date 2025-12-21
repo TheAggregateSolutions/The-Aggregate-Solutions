@@ -14,12 +14,13 @@
       line-height: 1.7;
     }
 
+    /* NAVBAR */
     nav {
       background: #ffffff;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 20px 40px;
+      padding: 18px 40px;
       border-bottom: 1px solid #e5e7eb;
       position: sticky;
       top: 0;
@@ -32,22 +33,22 @@
     }
 
     .brand-name {
-      font-size: 32px;
-      font-weight: 800;
-      letter-spacing: 2.5px;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
       color: #1f3a8a;
     }
 
     .brand-tagline {
       font-size: 13px;
       color: #555;
-      margin-top: 3px;
+      margin-top: 2px;
     }
 
     nav ul {
       list-style: none;
       display: flex;
-      gap: 26px;
+      gap: 25px;
       margin: 0;
       padding: 0;
     }
@@ -59,52 +60,41 @@
       font-size: 14px;
     }
 
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* HERO */
     header {
-      background: linear-gradient(135deg, #1f3a8a, #102a6a);
+      background: #1f3a8a;
       color: white;
-      padding: 110px 20px;
+      padding: 90px 20px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 36px;
-      letter-spacing: 1.5px;
-      font-weight: 600;
+      font-size: 46px;
+      letter-spacing: 2px;
     }
 
     header p {
       margin-top: 14px;
-      font-size: 16px;
+      font-size: 17px;
       opacity: 0.95;
     }
 
-    .cta-btn {
-      margin-top: 30px;
-      display: inline-block;
-      padding: 14px 32px;
-      background: #ffffff;
-      color: #1f3a8a;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 30px;
-      font-size: 14px;
-    }
-
-    .cta-btn:hover {
-      background: #e5e7eb;
-    }
-
+    /* CONTENT */
     .container {
-      max-width: 1100px;
+      max-width: 1000px;
       margin: auto;
-      padding: 70px 20px;
+      padding: 60px 20px;
       background: white;
     }
 
     h2 {
       color: #1f3a8a;
-      margin-top: 60px;
+      margin-top: 50px;
     }
 
     ul {
@@ -117,24 +107,29 @@
 
     .services {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 20px;
-      margin-top: 30px;
+      margin-top: 25px;
     }
 
     .service-box {
-      background: #f9fafc;
-      padding: 22px;
-      border-radius: 8px;
-      border: 1px solid #e5e7eb;
+      background: #f1f4fb;
+      padding: 18px;
+      border-left: 4px solid #1f3a8a;
+    }
+
+    .service-box strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #1f3a8a;
     }
 
     footer {
       background: #1f3a8a;
       color: white;
       text-align: center;
-      padding: 30px 15px;
-      margin-top: 70px;
+      padding: 25px 15px;
+      margin-top: 60px;
       font-size: 14px;
     }
   </style>
@@ -142,8 +137,10 @@
 
 <body>
 
+  <!-- NAVBAR -->
   <nav>
     <div class="brand">
+      <!-- Logo Will Be Added Here -->
       <div class="brand-name">THE AGGREGATE SOLUTIONS</div>
       <div class="brand-tagline">Construction Estimating & Project Support</div>
     </div>
@@ -155,38 +152,75 @@
     </ul>
   </nav>
 
+  <!-- HERO -->
   <header>
     <h1>Precision. Accuracy. Trusted Results.</h1>
-    <p>Serving Construction Projects Across Australia & USA</p>
-    <a href="#contact" class="cta-btn">Get a Free Quote</a>
+    <p>Serving Construction Projects Across Australia & United States</p>
   </header>
 
+  <!-- MAIN CONTENT -->
   <div class="container">
 
     <h2 id="about">About Us</h2>
     <p>
       The Aggregate Solutions Provides Professional Construction Estimating,
-      Quantity Takeoffs, and Documentation Support for Residential
+      Quantity Takeoffs, and Technical Documentation Support for Residential
       and Commercial Projects.
     </p>
 
     <h2>Why Choose Us</h2>
     <ul>
-      <li>Estimator-Driven, Not Software Guesswork</li>
-      <li>Clean BOQs Aligned With US & Australian Formats</li>
-      <li>Fast Turnaround Without Compromising Accuracy</li>
-      <li>Clear Scope Breakdowns for Confident Bidding</li>
+      <li>High-Precision Estimating Standards</li>
+      <li>Detail-Driven Quantity Takeoffs</li>
+      <li>Fast Turnaround Without Compromising Quality</li>
+      <li>US & Australian Estimation Expertise</li>
+      <li>Client-Focused Reporting and Formats</li>
     </ul>
 
     <h2 id="services">Our Services</h2>
+
     <div class="services">
-      <div class="service-box"><strong>Construction Estimation</strong></div>
-      <div class="service-box"><strong>Quantity Takeoffs</strong></div>
-      <div class="service-box"><strong>Bidding Assistance</strong></div>
-      <div class="service-box"><strong>Design Support</strong></div>
-      <div class="service-box"><strong>Data Entry</strong></div>
-      <div class="service-box"><strong>Documentation Services</strong></div>
+
+      <div class="service-box">
+        <strong>Construction Estimation</strong>
+        Detailed Cost Estimates Prepared From Drawings and Specifications,
+        Supporting Accurate Budgeting and Competitive Bidding.
+      </div>
+
+      <div class="service-box">
+        <strong>Quantity Takeoffs</strong>
+        Precise Material Takeoffs With Clear Trade-Wise Breakdowns,
+        Aligned With US and Australian Measurement Standards.
+      </div>
+
+      <div class="service-box">
+        <strong>Bidding Assistance</strong>
+        Professional Bid Support Including Scope Reviews, Pricing Checks,
+        and Submission-Ready Estimate Formats.
+      </div>
+
+      <div class="service-box">
+        <strong>Design Support</strong>
+        Measurement and Documentation Support for Architects
+        and Designers During Pre-Construction Phases.
+      </div>
+
+      <div class="service-box">
+        <strong>Data Entry</strong>
+        Accurate Entry of Takeoff and Cost Data Into Client-Specific
+        Spreadsheets, Templates, and Estimating Systems.
+      </div>
+
+      <div class="service-box">
+        <strong>Documentation Services</strong>
+        Organized BOQs, Cost Reports, and Trade Breakdowns
+        Prepared for Contractors, Developers, and Consultants.
+      </div>
+
     </div>
+
+    <h2>Service Regions</h2>
+    <p>Australia & United States</p>
 
     <h2 id="contact">Contact</h2>
     <p>Email: theaggregatesolutions01@gmail.com</p>
