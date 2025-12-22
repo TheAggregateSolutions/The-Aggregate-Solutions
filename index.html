@@ -30,17 +30,18 @@
     .brand {
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
     }
 
     .brand-name {
-      font-size: 26px;
-      font-weight: bold;
-      letter-spacing: 3px;
+      font-size: 28px;          /* FINAL: Company Name Bigger */
+      font-weight: 800;
+      letter-spacing: 2px;
       color: #1f3a8a;
     }
 
     .brand-tagline {
-      font-size: 13px;
+      font-size: 13px;          /* Supporting Line Smaller */
       color: #555;
       margin-top: 2px;
     }
@@ -68,31 +69,32 @@
     header {
       background: #1f3a8a;
       color: white;
-      padding: 110px 20px;
+      padding: 80px 20px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 54px;   /* 🔥 Company Name Sab Se Bada */
-      letter-spacing: 3px;
+      font-size: 28px;   /* Smaller Than Company Name */
+      font-weight: 500;
+      letter-spacing: 1px;
     }
 
-    .hero-tagline {
-      margin-top: 18px;
-      font-size: 18px;   /* 👇 Supporting Line Choti */
+    header p {
+      margin-top: 14px;
+      font-size: 16px;
       opacity: 0.95;
     }
 
     .cta-btn {
       display: inline-block;
-      margin-top: 35px;
-      padding: 14px 32px;
+      margin-top: 25px;
+      padding: 12px 26px;
       background: #ffffff;
       color: #1f3a8a;
-      font-weight: bold;
       text-decoration: none;
-      border-radius: 30px;
+      font-weight: bold;
+      border-radius: 25px;
       font-size: 14px;
     }
 
@@ -104,17 +106,13 @@
     .container {
       max-width: 1000px;
       margin: auto;
-      padding: 70px 20px;
+      padding: 60px 20px;
       background: white;
     }
 
     h2 {
       color: #1f3a8a;
-      margin-top: 60px;
-    }
-
-    p {
-      max-width: 850px;
+      margin-top: 50px;
     }
 
     ul {
@@ -125,17 +123,16 @@
       margin-bottom: 8px;
     }
 
-    /* SERVICES */
     .services {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 20px;
-      margin-top: 30px;
+      margin-top: 25px;
     }
 
     .service-box {
       background: #f1f4fb;
-      padding: 20px;
+      padding: 18px;
       border-left: 4px solid #1f3a8a;
     }
 
@@ -146,8 +143,8 @@
     }
 
     .service-box p {
+      margin: 8px 0 0;
       font-size: 14px;
-      margin-bottom: 0;
     }
 
     footer {
@@ -166,7 +163,9 @@
   <!-- NAVBAR -->
   <nav>
     <div class="brand">
-      <!-- Logo yahan baad me add hoga -->
+      <!-- Logo Will Be Added Here Later -->
+      <!-- <img src="logo.png" alt="Logo"> -->
+
       <div class="brand-name">THE AGGREGATE SOLUTIONS</div>
       <div class="brand-tagline">Construction Estimating & Project Support</div>
     </div>
@@ -178,11 +177,11 @@
     </ul>
   </nav>
 
-  <!-- HERO -->
+  <!-- HERO (NO DUPLICATE COMPANY NAME) -->
   <header>
-    <h1>THE AGGREGATE SOLUTIONS</h1>
-    <p class="hero-tagline">Precision. Accuracy. Trusted Results.</p>
-    <a href="#contact" class="cta-btn">Get A Free Quote</a>
+    <h1>Precision. Accuracy. Trusted Results.</h1>
+    <p>Supporting Construction Projects Across Australia & the United States</p>
+    <a href="#contact" class="cta-btn">Get a Free Quote</a>
   </header>
 
   <!-- MAIN CONTENT -->
@@ -192,21 +191,20 @@
     <p>
       The Aggregate Solutions provides professional construction estimating,
       quantity takeoffs, and technical project support services for residential
-      and commercial developments across Australia and the United States.
+      and commercial developments.
     </p>
 
     <h2>Why Choose Us</h2>
     <ul>
-      <li>High-precision estimating standards</li>
-      <li>Detail-driven quantity takeoffs</li>
-      <li>Fast turnaround without compromising quality</li>
-      <li>Strong experience with US & Australian project formats</li>
-      <li>Client-focused reporting and data structuring</li>
+      <li>High-Precision Estimating Standards</li>
+      <li>Detail-Driven Quantity Takeoffs</li>
+      <li>Fast Turnaround Without Compromising Quality</li>
+      <li>Strong Experience With US & Australian Project Formats</li>
+      <li>Client-Focused Reporting and Data Structuring</li>
     </ul>
 
     <h2 id="services">Our Services</h2>
     <div class="services">
-
       <div class="service-box">
         <h3>Construction Estimation</h3>
         <p>Accurate cost estimates prepared with detailed takeoffs and trade-level breakdowns.</p>
@@ -219,7 +217,7 @@
 
       <div class="service-box">
         <h3>Quantity Takeoffs</h3>
-        <p>Precise material takeoffs using industry-standard tools and client-specific formats.</p>
+        <p>Precise material takeoffs using industry standards and client-specific formats.</p>
       </div>
 
       <div class="service-box">
@@ -236,7 +234,6 @@
         <h3>Documentation Services</h3>
         <p>Professional project documentation aligned with tender and construction requirements.</p>
       </div>
-
     </div>
 
     <h2>Service Regions</h2>
@@ -248,8 +245,8 @@
   </div>
 
   <footer>
-    © 2025 The Aggregate Solutions. All rights reserved.
+    © 2025 The Aggregate Solutions. All Rights Reserved.
   </footer>
 
 </body>
-  </html>
+                                                                                                </html>
