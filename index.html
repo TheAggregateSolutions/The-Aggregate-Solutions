@@ -29,19 +29,31 @@
 
     .brand {
       display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo {
+      height: 44px;
+      width: auto;
+    }
+
+    .brand-text {
+      display: flex;
       flex-direction: column;
       align-items: flex-start;
     }
 
     .brand-name {
-      font-size: 28px;          /* FINAL: Company Name Bigger */
+      font-size: 28px;
       font-weight: 800;
       letter-spacing: 2px;
       color: #1f3a8a;
+      line-height: 1.1;
     }
 
     .brand-tagline {
-      font-size: 13px;          /* Supporting Line Smaller */
+      font-size: 13px;
       color: #555;
       margin-top: 2px;
     }
@@ -75,7 +87,7 @@
 
     header h1 {
       margin: 0;
-      font-size: 28px;   /* Smaller Than Company Name */
+      font-size: 28px;
       font-weight: 500;
       letter-spacing: 1px;
     }
@@ -163,11 +175,12 @@
   <!-- NAVBAR -->
   <nav>
     <div class="brand">
-      <!-- Logo Will Be Added Here Later -->
-      <!-- <img src="logo.png" alt="Logo"> -->
+      <img src="logo.png" alt="The Aggregate Solutions Logo" class="logo">
 
-      <div class="brand-name">THE AGGREGATE SOLUTIONS</div>
-      <div class="brand-tagline">Construction Estimating & Project Support</div>
+      <div class="brand-text">
+        <div class="brand-name">THE AGGREGATE SOLUTIONS</div>
+        <div class="brand-tagline">Construction Estimating & Project Support</div>
+      </div>
     </div>
 
     <ul>
@@ -177,7 +190,7 @@
     </ul>
   </nav>
 
-  <!-- HERO (NO DUPLICATE COMPANY NAME) -->
+  <!-- HERO -->
   <header>
     <h1>Precision. Accuracy. Trusted Results.</h1>
     <p>Supporting Construction Projects Across Australia & the United States</p>
@@ -249,4 +262,4 @@
   </footer>
 
 </body>
-                                                                                                </html>
+      </html>
