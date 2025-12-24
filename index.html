@@ -9,21 +9,21 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #f5f7fa;
-      color: #222;
+      background: #ffffff;
+      color: #111;
       line-height: 1.7;
     }
 
+    /* NAVBAR */
     nav {
       background: #ffffff;
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 18px 40px;
-      border-bottom: 1px solid #e5e7eb;
+      border-bottom: 1px solid #ddd;
       position: sticky;
       top: 0;
-      z-index: 1000;
     }
 
     .brand {
@@ -43,16 +43,14 @@
     }
 
     .brand-name {
-      font-size: 28px;
+      font-size: 26px;
       font-weight: 800;
-      letter-spacing: 2px;
-      color: #1f3a8a;
+      letter-spacing: 1px;
     }
 
     .brand-tagline {
       font-size: 13px;
       color: #555;
-      margin-top: 2px;
     }
 
     nav ul {
@@ -65,52 +63,50 @@
 
     nav ul li a {
       text-decoration: none;
-      color: #1f3a8a;
+      color: #111;
       font-weight: bold;
       font-size: 14px;
     }
 
+    /* HERO */
     header {
-      background: #1f3a8a;
-      color: white;
-      padding: 80px 20px;
-      text-align: center;
+      padding: 90px 20px;
+      text-align: left;
+      max-width: 1000px;
+      margin: auto;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 28px;
-      font-weight: 500;
-      letter-spacing: 1px;
+      font-size: 36px;
+      margin-bottom: 15px;
     }
 
     header p {
-      margin-top: 14px;
       font-size: 16px;
+      color: #444;
+      max-width: 600px;
     }
 
     .cta-btn {
       display: inline-block;
       margin-top: 25px;
       padding: 12px 26px;
-      background: #ffffff;
-      color: #1f3a8a;
+      background: #000;
+      color: #fff;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 25px;
       font-size: 14px;
     }
 
+    /* CONTENT */
     .container {
       max-width: 1000px;
       margin: auto;
       padding: 60px 20px;
-      background: white;
     }
 
     h2 {
-      color: #1f3a8a;
-      margin-top: 50px;
+      margin-top: 60px;
     }
 
     .services {
@@ -121,101 +117,84 @@
     }
 
     .service-box {
-      background: #f1f4fb;
-      padding: 18px;
-      border-left: 4px solid #1f3a8a;
+      border: 1px solid #ddd;
+      padding: 20px;
     }
 
     footer {
-      background: #1f3a8a;
-      color: white;
       text-align: center;
-      padding: 25px 15px;
+      padding: 30px 15px;
+      border-top: 1px solid #ddd;
       margin-top: 60px;
       font-size: 14px;
+      color: #555;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <nav>
-    <div class="brand">
-      <img src="logo.png" alt="The Aggregate Solutions Logo">
-
-      <div class="brand-text">
-        <div class="brand-name">THE AGGREGATE SOLUTIONS</div>
-        <div class="brand-tagline">Construction Estimating & Project Support</div>
-      </div>
+<nav>
+  <div class="brand">
+    <img src="logo.png" alt="The Aggregate Solutions Logo">
+    <div class="brand-text">
+      <div class="brand-name">The Aggregate Solutions</div>
+      <div class="brand-tagline">Construction Estimating & Project Support</div>
     </div>
-
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li>
-        <a href="mailto:theaggregatesolutions01@gmail.com">Contact</a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- HERO -->
-  <header>
-    <h1>Precision. Accuracy. Trusted Results.</h1>
-    <p>Supporting Construction Projects Across Australia & the United States</p>
-
-    <!-- FIXED EMAIL BUTTON -->
-    <a href="mailto:theaggregatesolutions01@gmail.com" class="cta-btn">
-      Discuss Your Project
-    </a>
-  </header>
-
-  <!-- CONTENT -->
-  <div class="container">
-
-    <h2 id="about">About Us</h2>
-    <p>
-      The Aggregate Solutions provides professional construction estimating,
-      quantity takeoffs, and technical project support services for residential
-      and commercial developments.
-    </p>
-
-    <h2 id="services">Our Services</h2>
-    <div class="services">
-      <div class="service-box">
-        <h3>Construction Estimation</h3>
-        <p>Accurate cost estimates with trade-level detail.</p>
-      </div>
-
-      <div class="service-box">
-        <h3>Bidding Assistance</h3>
-        <p>Complete bid preparation and scope review.</p>
-      </div>
-
-      <div class="service-box">
-        <h3>Quantity Takeoffs</h3>
-        <p>Precise material takeoffs using industry standards.</p>
-      </div>
-
-      <div class="service-box">
-        <h3>Documentation</h3>
-        <p>Professional reports aligned with tender requirements.</p>
-      </div>
-    </div>
-
-    <h2 id="contact">Contact</h2>
-    <p>
-      Email:
-      <a href="mailto:theaggregatesolutions01@gmail.com">
-        theaggregatesolutions01@gmail.com
-      </a>
-    </p>
-
   </div>
 
-  <footer>
-    © 2025 The Aggregate Solutions. All Rights Reserved.
-  </footer>
+  <ul>
+    <li><a href="#services">Services</a></li>
+    <li><a href="mailto:theaggregatesolutions01@gmail.com">Contact</a></li>
+  </ul>
+</nav>
+
+<header>
+  <h1>Precision. Accuracy. Trusted Results.</h1>
+  <p>
+    We deliver reliable construction estimation and quantity takeoff services
+    with accuracy you can trust.
+  </p>
+
+  <!-- EMAIL OPENS HERE -->
+  <a href="mailto:theaggregatesolutions01@gmail.com" class="cta-btn">
+    Discuss Your Project
+  </a>
+</header>
+
+<div class="container">
+
+  <h2 id="services">Our Services</h2>
+  <div class="services">
+    <div class="service-box">
+      <h3>Quantity Takeoffs</h3>
+      <p>Detailed material takeoffs prepared from construction drawings.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>Cost Estimation</h3>
+      <p>Accurate cost estimates to support budgeting and bidding.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>Trade-Based Estimates</h3>
+      <p>Specialized estimates for architectural and structural trades.</p>
+    </div>
+  </div>
+
+  <h2>Contact</h2>
+  <p>
+    Email:
+    <a href="mailto:theaggregatesolutions01@gmail.com">
+      theaggregatesolutions01@gmail.com
+    </a>
+  </p>
+
+</div>
+
+<footer>
+  © 2025 The Aggregate Solutions. All Rights Reserved.
+</footer>
 
 </body>
 </html>
