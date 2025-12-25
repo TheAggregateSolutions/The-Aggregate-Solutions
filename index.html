@@ -144,6 +144,29 @@
       color: #666;
     }
 
+    /* ================= WHATSAPP ================= */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 55px;
+      height: 55px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 999;
+    }
+
+    .whatsapp-float svg {
+      width: 28px;
+      height: 28px;
+      fill: #fff;
+    }
+
     /* ================= MOBILE ================= */
     @media (max-width: 768px) {
       header {
@@ -181,7 +204,6 @@
       <a href="#">Home</a>
       <a href="#">Services</a>
       <a href="#">Projects</a>
-      <!-- ✅ CONTACT EMAIL -->
       <a href="mailto:theaggregatesolutions01@gmail.com?Subject=Project%20Discussion">Contact</a>
     </nav>
   </header>
@@ -193,7 +215,6 @@
       We deliver reliable construction estimation and quantity takeoff services
       with accuracy you can trust.
     </p>
-    <!-- ✅ GET A FREE QUOTE EMAIL -->
     <button onclick="window.location.href='mailto:theaggregatesolutions01@gmail.com?Subject=Project%20Discussion'">
       Get A Free Quote
     </button>
@@ -230,70 +251,9 @@
     </div>
   </section>
 
-  <!-- WHY US -->
-  <section>
-    <h2>Why Choose Us</h2>
-
-    <div class="grid">
-      <div class="card">
-        <h3>Accuracy First</h3>
-        <p>
-          Every estimate is prepared with attention to detail
-          and cross-checked for reliability.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Industry Experience</h3>
-        <p>
-          Practical knowledge of construction standards and
-          real-world project requirements.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Trusted Results</h3>
-        <p>
-          Clear, professional, and dependable deliverables
-          for confident decision-making.
-        </p>
-      </div>
-    </div>
-  </section>
-<!-- TRUST SECTION -->
-<section>
-  <h2>Why Clients Trust Us</h2>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Accurate Estimating</h3>
-      <p>
-        Every estimate is prepared with careful quantity takeoffs
-        and strict accuracy checks.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Fast Turnaround</h3>
-      <p>
-        We deliver on time without compromising quality,
-        even under tight deadlines.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>US & Australia Experience</h3>
-      <p>
-        Strong understanding of construction standards,
-        formats, and practices in both regions.
-      </p>
-    </div>
-  </div>
-</section>
   <!-- CTA -->
   <div class="cta">
     <h2>Send Your Drawings & Get a Clear Estimate</h2>
-    <!-- ✅ CONTACT US EMAIL -->
     <button onclick="window.location.href='mailto:theaggregatesolutions01@gmail.com?Subject=Project%20Discussion'">
       Contact Us
     </button>
@@ -304,5 +264,16 @@
     © 2025 The Aggregate Solutions. All Rights Reserved.
   </footer>
 
+  <!-- WHATSAPP FLOAT BUTTON -->
+  <a class="whatsapp-float"
+     href="https://wa.me/923069660704"
+     target="_blank"
+     aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32">
+      <path d="M19.11 17.44c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.35-.8-.71-1.34-1.6-1.5-1.87-.16-.27-.02-.42.12-.56.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.48-.84-2.03-.22-.54-.45-.47-.61-.48h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.26 0 1.33.98 2.61 1.12 2.79.14.18 1.93 2.95 4.68 4.13.65.28 1.15.45 1.54.57.65.21 1.24.18 1.7.11.52-.08 1.6-.65 1.83-1.27.23-.61.23-1.13.16-1.24-.07-.11-.25-.18-.52-.32z"/>
+      <path d="M16 3C9.38 3 4 8.38 4 15c0 2.65.87 5.1 2.35 7.07L5 29l7.18-1.88C13.96 27.69 14.97 28 16 28c6.62 0 12-5.38 12-12S22.62 3 16 3zm0 22c-.89 0-1.77-.13-2.61-.38l-.47-.14-4.26 1.12 1.14-4.15-.15-.48C8.12 19.19 7.7 17.12 7.7 15c0-4.58 3.72-8.3 8.3-8.3 4.58 0 8.3 3.72 8.3 8.3 0 4.58-3.72 8.3-8.3 8.3z"/>
+    </svg>
+  </a>
+
 </body>
-          </html>
+</html>
